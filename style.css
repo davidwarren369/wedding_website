@@ -4,5 +4,8 @@
   font-family:'Courier New';
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   align-items: center;
 }
+
+
