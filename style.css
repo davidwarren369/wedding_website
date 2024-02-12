@@ -1,34 +1,8 @@
 
-
-.header {
-  background-color: #fafafa ;
+.main-header {
+  background-color: #f1f1f1 ;
   font-family:'Courier New';
-}
-
-.header {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  
-}
-
-.title {
-  margin-left: 1em;
-}
-
-.home {
-  font-size: 150%;
-  margin-left: 35em;
-}
-
-.info {
-  font-size: 150%;
-  margin-left: 2em;
-  
-}
-
-.contact {
-  font-size: 150%;
-  margin-left: 2em;
 }
