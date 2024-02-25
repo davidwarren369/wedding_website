@@ -5,6 +5,10 @@
 body{
   background-color:rgba(241, 164, 135, 0.836) ;
 }
+
+
+/* Main header styling */
+
 .main-header {
   background-color: none;
   color:white ;
@@ -38,6 +42,8 @@ body{
 }
 
 
+/* Main banner styling */
+
 .banner-index {
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
@@ -50,12 +56,12 @@ body{
 }
 
 .span-1 {
-  font-size: 1.5em;
+  font-size: 1.75em;
 }
 
 .span-2{
   font-size: 4.5em; 
-  padding-top: 25px;
+  padding-top: 50px;
 }
 
 .span-3 {
@@ -64,28 +70,60 @@ body{
 
 .span-4 {
   font-size: 4.5em; 
-  padding-bottom: 25px;
+  padding-bottom: 50px;
 }
 
 .span-5 {
-  font-size: 1.5em;
+  font-size: 1.75em;
 }
 
 
-
-
-
-
+/* Main image styling */
 
 .main-image {
   display: flex;
-  padding-bottom: 10px;
+  padding-bottom: 50px;
 }
 
 .image-main {
   flex: 50%;
   padding: 10px;
 }
+
+
+/* Our Story styling - Image & Text */
+
+.content-story {
+  display: flex;
+  align-items: center;
+  
+}
+
+.image-story {
+  width: 35%;
+  padding-left: 10px;
+  padding-right: 50px;
+}
+
+.story {
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  text-align: justify;
+  text-justify: inter-character;
+  width: 65%;
+  padding-right: 50px;
+}
+
+.story span {
+  color: black;
+  font-size: 3.5em;
+}
+
+.story p {
+  font-size: 1.35em;
+}
+
+
 
 
 
