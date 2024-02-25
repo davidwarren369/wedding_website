@@ -96,6 +96,7 @@ body{
 .content-story {
   display: flex;
   align-items: center;
+  padding-bottom: 50px;
   
 }
 
@@ -124,7 +125,22 @@ body{
 }
 
 
+/* Our Note styling - Text & Image */
 
+.content-note {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.image-note {
+  width: 35%;
+}
+
+.note {
+  width: 65%;
+}
 
 
 
