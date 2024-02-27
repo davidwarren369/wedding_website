@@ -139,7 +139,26 @@ body{
 }
 
 .note {
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  text-align: justify;
+  text-justify: inter-character;
   width: 65%;
+  padding-left: 20px;
+  padding-right: 50px;
+}
+
+.note span {
+  color: black;
+  font-size: 2.5em;
+}
+
+.note p {
+  font-size: 1.1em;
+}
+
+.note .sign-off {
+  padding-top: 30px;
 }
 
 
