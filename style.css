@@ -185,6 +185,68 @@
   padding-bottom: 5px;
 }
 
+/* Index - Upper floral design styling */
+
+.floral-upper-info {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+/* Index - Wedding details styling */
+
+.details-info {
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  padding-bottom: 50px;
+}
+
+.wedding-details {
+  font-size: 2.25em;
+  font-weight: bold;
+}
+
+.wedding-date {
+  font-size: 1.75em;
+}
+
+/* Index - Timeline info styling */
+
+.timeline-info {
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.timeline-info > div {
+  margin: 50px;
+}
+
+.event-type {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+.event-time {
+  font-size: 1.2em;
+}
+
+.event {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+
+
 
 
 
