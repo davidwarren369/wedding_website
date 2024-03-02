@@ -2,14 +2,17 @@
   box-sizing: border-box;
 }
 
-body{
+/* INDEX PAGE STYLING - STARTS HERE */
+
+
+#index {
   background-color:rgba(241, 164, 135, 0.836) ;
 }
 
 
-/* Main header styling */
+/* Index - Main header styling */
 
-.main-header {
+.header-index {
   background-color: none;
   color:white ;
   margin-bottom: 5px;
@@ -42,7 +45,7 @@ body{
 }
 
 
-/* Main banner styling */
+/* Index - Main banner styling */
 
 .banner-index {
   font-family: 'Courier New', Courier, monospace;
@@ -78,7 +81,7 @@ body{
 }
 
 
-/* Main image styling */
+/* Index - Main image styling */
 
 .main-image {
   display: flex;
@@ -91,7 +94,7 @@ body{
 }
 
 
-/* Our Story styling - Image & Text */
+/* Index - Our Story styling - Image & Text */
 
 .content-story {
   display: flex;
@@ -125,7 +128,7 @@ body{
 }
 
 
-/* Our Note styling - Text & Image */
+/* Index - Our Note styling - Text & Image */
 
 .content-note {
   display: flex;
@@ -160,6 +163,32 @@ body{
 .note .sign-off {
   padding-top: 30px;
 }
+
+
+/* INFO PAGE STYLING - STARTS HERE */
+
+
+#info {
+  background-color: white;
+}
+
+
+/* INFO - Main header styling */
+
+
+.header-info {
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+
+
+
+
 
 
 
