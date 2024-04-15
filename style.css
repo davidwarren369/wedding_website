@@ -40,7 +40,7 @@
   padding-right: 20px;
 }
 
-.contact {
+.rsvp {
   padding-right: 20px;
 }
 
@@ -185,7 +185,7 @@
   padding-bottom: 5px;
 }
 
-/* Index - Upper floral design styling */
+/* Info - Upper floral design styling */
 
 .floral-upper-info {
   display: flex;
@@ -193,7 +193,7 @@
   padding-bottom: 20px;
 }
 
-/* Index - Wedding details styling */
+/* Info - Wedding details styling */
 
 .details-info {
   font-family: 'Courier New', Courier, monospace;
@@ -213,7 +213,7 @@
   font-size: 1.75em;
 }
 
-/* Index - Timeline info styling */
+/* Info - Timeline info styling */
 
 .timeline-info {
   font-family: 'Courier New', Courier, monospace;
@@ -244,7 +244,7 @@
 }
 
 
-/* Index - Location info styling */
+/* Info - Location info styling */
 
 .location-info {
   font-family: 'Courier New', Courier, monospace;
@@ -268,7 +268,7 @@
 
 
 
-/* Index - Lower floral design styling */
+/* Info - Lower floral design styling */
 
 .floral-lower-info {
   display: flex;
@@ -277,7 +277,7 @@
 }
 
 
-/* Index - Gallery design styling */
+/* Info - Gallery design styling */
 
 .gallery-1 {
   display: flex;
@@ -290,6 +290,25 @@
 
 
 
+
+/* RSVP PAGE STYLING - STARTS HERE */
+
+
+#rsvp {
+  background-color: white;
+}
+
+/* rsvp - Main header styling */
+
+
+.header-rsvp {
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5px;
+}
 
 
 
