@@ -310,6 +310,49 @@
   padding-bottom: 5px;
 }
 
+.form-header {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+/* rsvp - Setting the font of the entire form */
+
+form {
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* rsvp - styling the labels to sit on top of the inputs */
+
+input, label {
+  display: block;
+}
+
+
+.first-name, .last-name {
+  display: inline-block;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
