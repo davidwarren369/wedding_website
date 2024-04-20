@@ -316,18 +316,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 100px;
+  padding-bottom: 75px;
 }
 
 /* rsvp - Setting the font of the entire form */
 
 form {
   font-family: 'Courier New', Courier, monospace;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  font-size: 1.1em;
+  display: block;
+  text-align:center;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
 }
 
+.name-required, #email-add, .attending-q, #option-label {
+  font-size: 1.3em;
+  font-weight: bold;
+}
 
 /* rsvp - styling the labels to sit on top of the inputs */
 
@@ -335,11 +342,119 @@ input, label {
   display: block;
 }
 
+/* rsvp - Name of persons(s) */
+
+.name-required {
+  text-align: left;
+}
 
 .first-name, .last-name {
   display: inline-block;
+  padding-bottom: 75px;
+}
+
+#first-n{
+  text-align: left;
+}
+
+#first-name {
+  width: 400px;
+  height: 40px;
   
 }
+
+#last-n {
+  text-align: left;
+}
+
+.first-name {
+  padding-right: 25px;
+}
+
+#last-name {
+  width: 400px;
+  height: 40px;
+}
+
+
+/* rsvp - Email Address */
+
+.form-email {
+  display: inline-block;
+  padding-bottom: 75px;
+}
+
+#email-add {
+  text-align: left;
+}
+
+#email-address {
+  width: 835px;
+  height: 40px;
+}
+
+.email-updates {
+  text-align: left;
+}
+
+/* rsvp - Attending Question */
+
+.form-attendance {
+  padding-bottom: 75px;
+}
+
+.yes-checkbox, .no-checkbox {
+  display: inline-block;
+}
+
+.yes-checkbox {
+  padding-right: 30px;
+}
+
+#check-yes  {
+  transform: scale(1.75);
+}
+
+#check-no  {
+  transform: scale(1.75);
+}
+
+/* rsvp - Meal Option */
+
+.meal-option {
+  display: inline-block;
+  padding-bottom: 100px;
+}
+
+#option-label {
+  padding-bottom: 10px;
+}
+
+#option-choice {
+  width: 200px;
+  height: 35px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: medium;
+}
+
+
+/* rsvp - Submit Button */
+
+.submit-button {
+  padding-bottom: 75px;
+}
+
+#submit-button {
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  background-color: rgb(137, 201, 137);
+  border-color: rgb(137, 201, 137);
+  color: white;
+  font-size: large;
+  border-radius: 6px;
+}
+
 
 
 

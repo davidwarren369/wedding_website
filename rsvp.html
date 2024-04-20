@@ -26,42 +26,61 @@
         <p class="rsvp-deadline">Kindly Reply By The 6th Of July</p>
     </div>
 
-    <form>
+    <form> <!--RSVP Form-->
 
-    <section class="form-name">
-
+    <!--Name of person(s)-->
+    <section class="form-name"> 
     <div class="first-name">
-        <label for="first-name">First Name</label>
-        <input type="text" id="first-name"><br> 
+        <p class="name-required">Name (required)</p>
+        <label for="first-name" id="first-n">First Name</label>
+        <input type="text" id="first-name" class="f-name"><br> 
     </div>
-    
     <div class="last-name">
-        <label for="last-name">Last Name</label>
-        <input type="text" id="last-name"><br>
+        <label for="last-name" id="last-n">Last Name</label>
+        <input type="text" id="last-name" class="l-name"><br>
     </div>
-
     </section>
-
-
-    <section class="form-email">
-        <label for="email-address">Email Address</label>
+    
+    <!--Email Address-->
+    <section class="form-email"> 
+        <label for="email-address" id="email-add">Email Address (required)</label>
+        <p class="email-updates">We'll be giving you regular updates before the big day</p>
         <input type="text" id="email-address"><br>
     </section>
 
-
+    <!--Attending Question-->
     <section class="form-attendance">
-        <p>Will You Be Attending ?</p>
-
-        <input type="checkbox" id="yes">
-        <label for="yes">Yes</label><br>
-
-        <input type="checkbox" id="no">
-        <label for="no">No</label>
+    <div class="attending-q">
+        <p>Will You Be Attending ? (required)</p>
+    </div> 
+    <div class="yes-checkbox">
+        <label for="yes" id="yes">Yes</label>
+        <input type="checkbox" id="check-yes"><br>
+    </div>
+    <div class="no-checkbox">
+        <label for="no" id="no">No</label>
+        <input type="checkbox" id="check-no"><br>
+    </div>
     </section>
-    </form>
 
+    <!--Meal Option-->
+    <section class="meal-option">
+       <label for="option" id="option-label">Meal Option (required)</label>
+       <p class="choose-option">Please choose one of the following options</p>
+       <select id="option-choice">
+            <option hidden>Select One</option>
+            <option value="Chicken">Chicken</option>
+            <option value="Beef">Beef</option>
+            <option value="Salmon">Salmon</option>
+       </select>
+    </section>
     
+    <!--Submit-->
+    <div class="submit-button">
+        <input type="submit" value="Submit" id="submit-button">
+    </div>
 
+    </form>
     
 
     <div class="floral-lower-info">
