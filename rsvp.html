@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="rsvp.js"></script>
     <title>Wedding Website</title>
 </head>
 <body id="rsvp">
@@ -72,15 +73,24 @@
             <option value="Chicken">Chicken</option>
             <option value="Beef">Beef</option>
             <option value="Salmon">Salmon</option>
+            <option value="None Of The Above">None Of The Above</option>
        </select>
     </section>
     
+    <!--Text Area-->
+    <section class="comments-section">
+        <label for="comments" id="comment-label">Comments</label>
+        <textarea id="comments" name="comments" placeholder="Write Something..."></textarea>
+    </section>
+
     <!--Submit-->
     <div class="submit-button">
         <input type="submit" value="Submit" id="submit-button">
     </div>
 
     </form>
+
+    
     
 
     <div class="floral-lower-info">
