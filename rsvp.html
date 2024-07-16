@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="rsvp.js"></script>
     <title>Wedding Website</title>
 </head>
 <body id="rsvp">
@@ -27,7 +26,7 @@
         <p class="rsvp-deadline">Kindly Reply By The 6th Of July</p>
     </div>
 
-    <form> <!--RSVP Form-->
+    <form id="form"> <!--RSVP Form-->
 
     <!--Name of person(s)-->
     <section class="form-name"> 
@@ -51,24 +50,21 @@
 
     <!--Attending Question-->
     <section class="form-attendance">
-    <div class="attending-q">
-        <p>Will You Be Attending ? (required)</p>
-    </div> 
-    <div class="yes-checkbox">
-        <label for="yes" id="yes">Yes</label>
-        <input type="checkbox" id="check-yes"><br>
-    </div>
-    <div class="no-checkbox">
-        <label for="no" id="no">No</label>
-        <input type="checkbox" id="check-no"><br>
-    </div>
+        <div class="attending-q">
+            <p>Will You Be Attending ? (required)</p>
+        </div> 
+        <select id="attending">
+            <option hidden>Select One</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
     </section>
 
     <!--Meal Option-->
     <section class="meal-option">
        <label for="option" id="option-label">Meal Option (required)</label>
        <p class="choose-option">Please choose one of the following options</p>
-       <select id="option-choice">
+       <select id="meal-option">
             <option hidden>Select One</option>
             <option value="Chicken">Chicken</option>
             <option value="Beef">Beef</option>
@@ -80,22 +76,42 @@
     <!--Text Area-->
     <section class="comments-section">
         <label for="comments" id="comment-label">Comments</label>
-        <textarea id="comments" name="comments" placeholder="Write Something..."></textarea>
+        <textarea id="comments" name="comment" placeholder="Write Something..."></textarea>
     </section>
 
-    <!--Submit-->
-    <div class="submit-button">
-        <input type="submit" value="Submit" id="submit-button">
-    </div>
-
     </form>
+ 
+    <!--Submit-->
+    <button class="button open-button">open modal</button>
 
-    
-    
+    <dialog class="modal" id="modal">
+
+        <div class="floral-upper-info">
+            <img src="photos\flowers_upper.png"
+            alt="floral design" >
+        </div>
+        
+        <h5 id="first-name-entered"></h5>
+        <h5 id="last-name-entered"></h5>
+        <h5 id="attending-yes-or-no"></h5>
+        <h5 id="email-entered"></h5>
+        <h5 id="meal-option-entered"></h5>
+        <h5 id="guest-comments"></h5>
+        
+        <div class="floral-lower-info">
+            <img src="photos\flowers_lower.png"
+            alt="floral design" >
+        </div>
+        <button class="button close-button">close modal</button>
+        <!-- <button class="button" type="submit">submit form</button> -->
+    </dialog>
+
 
     <div class="floral-lower-info">
         <img src="photos\flowers_lower.png"
         alt="floral design" >
     </div>
+
+    <script src="rsvp.js"></script>
 </body>
 </html>
