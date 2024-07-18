@@ -360,6 +360,8 @@ input, label {
 #first-name {
   width: 400px;
   height: 40px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.1em;
   
 }
 
@@ -374,6 +376,8 @@ input, label {
 #last-name {
   width: 400px;
   height: 40px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.1em;
 }
 
 
@@ -391,6 +395,8 @@ input, label {
 #email-address {
   width: 835px;
   height: 40px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.1em;
 }
 
 .email-updates {
@@ -399,10 +405,19 @@ input, label {
 
 /* rsvp - Attending Question */
 
+
 .form-attendance {
   padding-bottom: 75px;
 }
 
+#attending {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.05em;
+  width: 200px;
+  height: 35px;
+}
+
+/*
 .yes-checkbox, .no-checkbox {
   display: inline-block;
 }
@@ -418,6 +433,9 @@ input, label {
 #check-no  {
   transform: scale(1.75);
 }
+*/
+
+
 
 /* rsvp - Meal Option */
 
@@ -437,6 +455,13 @@ input, label {
   font-size: medium;
 }
 
+#meal-option {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.05em;
+  width: 200px;
+  height: 35px;
+}
+
 /* rsvp - Comments */
 
 .comments-section {
@@ -449,7 +474,8 @@ input, label {
 
 #comments {
   width: 835px;
-  height: 150px
+  height: 150px;
+  font-size: 1.35em;
 }
 
 #comment-label {
@@ -460,25 +486,39 @@ input, label {
 
 /* rsvp - Submit Button */
 
-.submit-button {
-  padding-bottom: 75px;
-}
-
-#submit-button {
-  display: inline-block;
+.open-button {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.25em;
   width: 150px;
-  height: 40px;
-  background-color: rgb(137, 201, 137);
-  border-color: rgb(137, 201, 137);
-  color: white;
-  font-size: large;
-  border-radius: 6px;
+  height: 35px;
+  display: block;
+  margin: 0 auto;
 }
 
 
 
 
+/* rsvp - Modal Styling */
 
+.modal {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.input-field {
+  font-weight: bold
+}
+
+
+/* rsvp - Close Modal */
+
+.close-button {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 80%;
+  width: 150px;
+  height: 35px;
+}
 
 
 
