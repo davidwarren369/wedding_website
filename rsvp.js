@@ -11,13 +11,14 @@ let comments = document.getElementById("comments");
 
 
 openModal.addEventListener("click", function() {
-    modal.showModal();
-    myFunction();
-  });
-  
-  closeModal.addEventListener("click", function() {
-    modal.close();
-  });
+  //validateForm()
+  modal.showModal();
+  myFunction();
+});
+
+closeModal.addEventListener("click", function() {
+  modal.close();
+});
 
 
   function myFunction() {
@@ -37,3 +38,25 @@ openModal.addEventListener("click", function() {
     guestComments.innerHTML = "Comments From Guest: " + comments.value
   
   }
+
+
+  function validateName(fName) {
+    if (fName.length == 0) {
+      return "Name cannot be empty";
+   }
+  }
+
+
+  function validateForm() {
+    let fName = document.getElementById("first-name").value;
+
+    let nameError = validateName(fName);
+    if (nameError) {
+      alert(nameError);
+      return false;
+    }
+  }
+
+  
+  
+  
