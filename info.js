@@ -42,17 +42,17 @@ const updateDots = (currentDot, targetDot) => {                 // taking the cu
 // function for hiding & showing the arrows
 const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
 
-    if (targetIndex === 0) {                        // if true, we are on the 1st slide
-        prevButton.classList.add('is-hidden');      // 
-        nextButton.classList.remove('is-hidden');   // 
+    if (targetIndex === 0) {                                // if true, we are on the 1st slide
+        prevButton.classList.add('is-hidden');              // 
+        nextButton.classList.remove('is-hidden');           // 
     
-    } else if (targetIndex === slides.length -1) {
-        prevButton.classList.remove('is-hidden');
-        nextButton.classList.add('is-hidden');
+    } else if (targetIndex === slides.length -1) {          //
+        prevButton.classList.remove('is-hidden');           // 
+        nextButton.classList.add('is-hidden');              //
 
     } else {
-        prevButton.classList.remove('is-hidden');
-        nextButton.classList.remove('is-hidden');
+        prevButton.classList.remove('is-hidden');           //
+        nextButton.classList.remove('is-hidden');           //
     }                                             
 
 }
