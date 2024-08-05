@@ -337,7 +337,7 @@
 }
 
 .carousel__nav {
-  background: pink;
+  /* background: pink; */
   display: flex;
   justify-content: center;
   padding: 10px 0;
@@ -351,11 +351,14 @@
   height: 17.5px;
   background: rgba(0, 0, 0, .3);
   margin: 0 15px;
+  cursor: pointer;
 }
 
 .carousel__indicator.current-slide {
   background: rgba(0, 0, 0, .75);
 }
+
+.is-hidden { display: none; }
 
 
 /* RSVP PAGE STYLING - STARTS HERE */
