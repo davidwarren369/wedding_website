@@ -77,7 +77,7 @@ prevButton.addEventListener('click', e => {                            // each c
 
 
 
-// click right, move slides to the right
+// 1. click right, move slides to the right
 nextButton.addEventListener('click', e => {                            // each click, evaluate the current slide and plug it into currentSlide in function call below
                                                                        // each click, evaluate the nex slide and and plug it into currentSlide in function call below 
     const currentSlide = track.querySelector('.current-slide');        // querying 'track' is faster than querying entire document

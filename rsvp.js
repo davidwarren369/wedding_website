@@ -12,7 +12,10 @@ closeModal.addEventListener("click", function() {   //Listening for a 'click', t
   modal.close();                                    
 });
 
-                                                          //declaring variables - form 'inputs' 
+
+
+//declaring variables - form 'inputs' 
+                                                          
 let firstName = document.getElementById("first-name");
 let lastName = document.getElementById("last-name");        
 let attendance = document.getElementById("attending");
@@ -22,7 +25,9 @@ let comments = document.getElementById("comments");
 
 
 
-function confirmInfo() {     //Func to pass Input information into the modal
+//Func to pass Input information into the modal
+
+function confirmInfo() {     
   
   let firstNameEntered = document.getElementById("first-name-entered"); 
   let lastNameEntered = document.getElementById("last-name-entered");
@@ -39,13 +44,13 @@ function confirmInfo() {     //Func to pass Input information into the modal
   guestComments.innerHTML = "Comments From Guest: " + comments.value
 }
 
-
+// Form validation - First name
 
 function validateFirstName(fName) {
   if (fName.length == 0) {
      return "First name cannot be empty";
   } 
-   else if (!fName.match(/^[a-zA-Z\s]+$/)) {
+   else if (!fName.match(/^[a-zA-Z\s]+$/)) {   // regular expression pattern 
     return "First name can only contain letters and spaces";
   }
   else {
@@ -54,11 +59,14 @@ function validateFirstName(fName) {
 
 }
 
+
+// Form validation - Last name 
+
 function validateLastName(lName) {
   if (lName.length == 0) {
     return "Last name cannot be empty";
   } 
-  else if (!lName.match(/^[a-zA-Z\s]+$/)) {
+  else if (!lName.match(/^[a-zA-Z\s]+$/)) {     // regular expression pattern
     return "Last name can only contain letters and spaces";
   }
    else {
@@ -66,16 +74,22 @@ function validateLastName(lName) {
    }
 }
  
+
+// Form validation - Email  
+
 function validateEmail(emailAddr) {
    if (emailAddr.length == 0) {
      return "Email address cannot be empty";
  } 
-   else if (!emailAddr.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+   else if (!emailAddr.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {  // regular expression pattern
      return "Invalid email address";
    }
    else {
      return "";    }
 }
+
+
+// Form validation - Attendance 
 
 function validateAttendance(attendanceCheck) {
   if (attendanceCheck === "Select One") {
@@ -86,6 +100,8 @@ function validateAttendance(attendanceCheck) {
    }      
 }
 
+// Form validation - Meal Option 
+
 function validateMealOption(mealOption) {
   if (mealOption === "Select One") {
     return "Please select a meal option"
@@ -95,6 +111,8 @@ function validateMealOption(mealOption) {
   }
   
 }
+
+// Form validation - main func for validation
 
 function validateForm() {
    let fName = document.getElementById("first-name").value;
